@@ -16,6 +16,8 @@ const people = [
     }
 ]
 
+//map over with callback (arrow function)
+
 const newPeople = people.map((person) => {
     return {
         firstName : person.name,
@@ -24,3 +26,13 @@ const newPeople = people.map((person) => {
 })
 
 console.log(newPeople)
+
+// by reference
+
+const getAges = (people) => people.age * 2 
+
+const ages = people.map(getAges)
+console.log(ages)
+
+
+//
